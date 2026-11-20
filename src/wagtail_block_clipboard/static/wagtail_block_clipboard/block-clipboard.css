@@ -1,0 +1,91 @@
+/* Paste buttons only exist while a copied block is waiting (class set by block-clipboard.js). */
+.c-sf-add-button.wbc-paste {
+  display: none;
+}
+
+.wbc-has-entries .c-sf-add-button.wbc-paste {
+  display: grid;
+  margin-inline-start: 0;
+}
+
+/* Wagtail draws the "+" in a circle, which turns the clipboard into a blob. */
+.c-sf-add-button.wbc-paste .icon {
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+}
+
+.c-sf-add-button.wbc-paste:hover .icon,
+.c-sf-add-button.wbc-paste:focus-visible .icon {
+  background-color: transparent;
+  color: var(--w-color-text-button-outline-hover);
+}
+
+.wbc-inserter {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.wbc-dialog {
+  width: min(32rem, calc(100vw - 2rem));
+  padding: 1.5rem;
+  border: 1px solid var(--w-color-border-furniture);
+  border-radius: 0.3125rem;
+  background: var(--w-color-surface-page);
+  color: var(--w-color-text-context);
+}
+
+.wbc-dialog::backdrop {
+  background: rgb(0 0 0 / 50%);
+}
+
+.wbc-dialog h2 {
+  margin: 0 0 1rem;
+  font-size: 1.25rem;
+}
+
+.wbc-dialog ul {
+  display: grid;
+  gap: 0.5rem;
+  margin: 0 0 1.5rem;
+  padding: 0;
+  list-style: none;
+}
+
+.wbc-dialog li {
+  display: flex;
+  align-items: start;
+  gap: 0.5rem;
+}
+
+.wbc-entry {
+  display: grid;
+  flex: 1;
+  gap: 0.125rem;
+  padding: 0.75rem;
+  border: 1px solid var(--w-color-border-field-default);
+  border-radius: 0.3125rem;
+  background: var(--w-color-surface-field);
+  color: inherit;
+  text-align: start;
+  cursor: pointer;
+}
+
+.wbc-entry:hover,
+.wbc-entry:focus-visible {
+  border-color: var(--w-color-border-field-hover);
+}
+
+.wbc-entry span {
+  color: var(--w-color-text-meta);
+  font-size: 0.875rem;
+}
+
+.wbc-entry[aria-disabled='true'] {
+  background: var(--w-color-surface-field-inactive);
+  cursor: not-allowed;
+}
+
+.wbc-entry .wbc-reason {
+  color: var(--w-color-text-error);
+}

@@ -1,0 +1,59 @@
+# Translations for the wagtail_block_clipboard app.
+msgid ""
+msgstr ""
+"Project-Id-Version: wagtail-block-clipboard\n"
+"Language-Team: French\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: apps.py
+msgid "Block clipboard"
+msgstr "Copier-coller de blocs"
+
+#: wagtail_hooks.py
+msgid "Copy"
+msgstr "Copier"
+
+msgid "Copied"
+msgstr "Copié"
+
+msgid "Block copied. Paste it with the clipboard button next to a “+” button."
+msgstr "Bloc copié. Collez-le avec le bouton presse-papiers, à côté d’un bouton « + »."
+
+msgid "The block could not be copied."
+msgstr "Le bloc n’a pas pu être copié."
+
+msgid "Paste a copied block"
+msgstr "Coller un bloc copié"
+
+msgid "from “{source}”"
+msgstr "depuis « {source} »"
+
+msgid ""
+"“{label}”, copied from “{source}”, cannot be added to “{target}”: this type "
+"of block is not available there."
+msgstr ""
+"« {label} », copié depuis « {source} », ne peut pas être ajouté dans "
+"« {target} » : ce type de bloc n’y est pas disponible."
+
+msgid ""
+"“{label}”, copied from “{source}”, cannot be added here: this type of block "
+"is not available in this field."
+msgstr ""
+"« {label} », copié depuis « {source} », ne peut pas être ajouté ici : ce "
+"type de bloc n’est pas disponible dans ce champ."
+
+msgid "The maximum number of blocks is reached here."
+msgstr "Le nombre maximum de blocs est atteint ici."
+
+msgid "Pasted without: {fields}"
+msgstr "Collé sans : {fields}"
+
+msgid "Remove “{label}” from the copied blocks"
+msgstr "Retirer « {label} » des blocs copiés"
+
+msgid "Close"
+msgstr "Fermer"
